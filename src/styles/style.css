@@ -2,11 +2,11 @@
 
 /* ----- VARIABLES ----- */
 :root {
-  --body-color: rgb(250, 250, 250);
-  --color-white: rgb(255, 255, 255);
+  --body-color: #87ceeb;
+  --color-white: #fffff0;
 
-  --text-color-second: rgb(68, 68, 68);
-  --text-color-third: rgb(30, 159, 171);
+  --text-color-second: #00003d;
+  --text-color-third: #fffff0;
 
   --first-color: rgb(110, 87, 224);
   --first-color-hover: rgb(40, 91, 212);
@@ -14,6 +14,22 @@
   --second-color: rgb(110, 87, 224);
   --third-color: rgb(192, 166, 49);
   --first-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* ----- CHANGE THE SCROLL BAR DESIGN ----- */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #bbb;
 }
 
 /* ----- BASE ----- */
@@ -76,7 +92,7 @@ nav {
 .nav-name {
   font-size: 30px;
   font-weight: 600;
-  color: var(--text-color-third);
+  color: var(--text-color-second);
 }
 
 .nav-logo span {
@@ -84,7 +100,7 @@ nav {
   top: -15px;
   right: -20px;
   font-size: 5em;
-  color: var(--text-color-second);
+  color: var(--text-color-third);
 }
 
 .nav-menu,
@@ -161,12 +177,12 @@ nav {
 .featured-name {
   font-size: 50px;
   font-weight: 600;
-  color: var(--text-color-second);
+  color: var(--text-color-third);
   margin-block: 20px;
 }
 .typedText {
   text-transform: capitalize;
-  color: var(--text-color-third);
+  color: var(--text-color-second);
 }
 .featured-text-info {
   font-size: 15px;
@@ -198,6 +214,7 @@ nav {
   border-radius: 50%;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  background-color: var(--text-color-third);
 }
 .icon:hover {
   color: var(--first-color);
@@ -261,7 +278,7 @@ nav {
   margin-bottom: 10px;
 }
 .top-header span {
-  color: #999;
+  color: var(--text-color-third);
 }
 h3 {
   font-size: 20px;
@@ -404,6 +421,6 @@ h3 {
 .contact-info:hover.contact-info h2,
 .contact-info:hover.contact-info p,
 .contact-info:hover.contact-info i {
-  color: #777;
+  color: var(--text-color-second);
   z-index: 2;
 }
