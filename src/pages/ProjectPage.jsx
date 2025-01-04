@@ -1,7 +1,5 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-// import { Link } from "react-router-dom";
-// import ReportIn from "../../public/images/ReportIn.svg";
 import { getAllProject } from "../utils/local-data";
 
 function ProjectPage() {
@@ -23,12 +21,14 @@ function ProjectPage() {
               <img src={project.image} alt="Project Image" />
             </div>
             <div className="content-wrapper">
-              <h3>{project.title}</h3>
+              <h3>
+                {project.title} <span className="category">{project.category}</span>
+              </h3>
               <p>{project.kategori}</p>
               <p>{project.body}</p>
               <div className="featured-text-btn">
                 <button className="btn" onClick={() => openNewTab(project.url)}>
-                  View Site
+                  View Project
                 </button>
               </div>
             </div>
