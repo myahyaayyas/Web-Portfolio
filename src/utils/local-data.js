@@ -46,7 +46,7 @@ let project = [
     body: `Saya berperan sebagai backend developer dalam proyek Jangkau by BCA, sebuah platform perbankan digital berbasis website dan Android yang dirancang untuk meningkatkan aksesibilitas layanan perbankan, terutama bagi penyandang disabilitas seperti mitra netra. Tanggung jawab saya meliputi pengembangan dan integrasi fitur utama, seperti autentikasi pengguna, transaksi perbankan (transfer antar rekening BCA, pembayaran QR Code), serta manajemen mutasi rekening. Saya juga terlibat dalam pengaturan performa sistem agar dapat menangani transaksi secara real-time dengan tingkat keamanan yang tinggi sesuai standar perbankan.
           Teknologi utama yang digunakan: Java Spring Boot, PostgreSQL, dan RESTful API.`,
     url: "https://github.com/myahyaayyas/jangkau",
-    image: "../../images/Dashboard - REV.jpg",
+    image: "../../images/Jangkau.png",
   },
 ];
 
