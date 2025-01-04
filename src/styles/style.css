@@ -370,6 +370,14 @@ h3 {
   color: #777;
 }
 
+.category {
+  font-size: 12px;
+  background-color: rgb(32, 100, 25);
+  color: white;
+  padding: 0.5em;
+  border-radius: 10px;
+}
+
 /* ----- CONTACT BOX ----- */
 
 .contact-info::after {
